@@ -13,11 +13,11 @@ const Index = () => {
   }, []);
 
   const skills = {
-    "Frontend": ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3"],
-    "Backend": [".NET Core", "C#", "Node.js", "WPF", "WCF", "MVVM"],
-    "Database": ["SQL Server", "RDBMS Design", "Database Optimization"],
+    "Frontend": ["WPF", "C#", "Angular"],
+    "Backend": [".NET Core", "C#", "WCF", "MVVM"],
+    "Database": ["SQL Server", "RDBMS Design", "Database Optimization", "Ignite"],
     "DevOps": ["Git", "Azure DevOps", "SVN", "Agile", "Scrum"],
-    "Tools": ["Visual Studio", "JIRA", "DevExpress", "Telerik Controls"]
+    "Tools": ["Visual Studio", "JIRA", "DevExpress", "Telerik Controls", "Infragistics"]
   };
 
   const experiences = [
@@ -60,10 +60,10 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <section className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23374151%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%224%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
         
         <div className={`container mx-auto px-6 py-20 relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -71,10 +71,10 @@ const Index = () => {
               <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Ahmed Naveed Zafar
               </h1>
-              <p className="text-xl lg:text-2xl text-blue-200 mb-8 font-light">
+              <p className="text-xl lg:text-2xl text-blue-300 mb-8 font-light">
                 Senior Software Engineer & Team Lead
               </p>
-              <p className="text-lg text-slate-300 mb-8 max-w-2xl">
+              <p className="text-lg text-gray-300 mb-8 max-w-2xl">
                 Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.
               </p>
               
@@ -89,7 +89,7 @@ const Index = () => {
                 </Button>
               </div>
               
-              <div className="flex items-center justify-center lg:justify-start text-slate-300">
+              <div className="flex items-center justify-center lg:justify-start text-gray-300">
                 <MapPin className="mr-2 h-5 w-5" />
                 <span>Civil Defense Society, Cantt. Lahore, Pakistan</span>
               </div>
@@ -114,19 +114,19 @@ const Index = () => {
       </section>
 
       {/* Education Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-slate-800">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">
             Education
           </h2>
           <div className="max-w-4xl mx-auto">
-            <Card className="shadow-xl border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <Card className="shadow-xl border-0 bg-gradient-to-r from-gray-800 to-slate-800">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <Award className="h-8 w-8 text-blue-600 mr-4" />
-                  <h3 className="text-2xl font-bold text-slate-800">Master's in Software Engineering</h3>
+                  <Award className="h-8 w-8 text-blue-400 mr-4" />
+                  <h3 className="text-2xl font-bold text-white">Master's in Software Engineering</h3>
                 </div>
-                <p className="text-lg text-slate-600">University of Engineering & Technology, Lahore, Pakistan</p>
+                <p className="text-lg text-gray-300">University of Engineering & Technology, Lahore, Pakistan</p>
               </CardContent>
             </Card>
           </div>
@@ -134,27 +134,27 @@ const Index = () => {
       </section>
 
       {/* Technical Expertise Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-100 to-blue-100">
+      <section className="py-20 bg-gradient-to-r from-slate-900 to-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-slate-800">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">
             Technical Expertise
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {Object.entries(skills).map(([category, skillList]) => (
-              <Card key={category} className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0">
+              <Card key={category} className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-gray-800">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-slate-800 flex items-center">
-                    {category === 'Frontend' && <Code className="mr-2 h-6 w-6 text-blue-600" />}
-                    {category === 'Backend' && <Database className="mr-2 h-6 w-6 text-green-600" />}
-                    {category === 'Database' && <Database className="mr-2 h-6 w-6 text-purple-600" />}
-                    {category === 'DevOps' && <Users className="mr-2 h-6 w-6 text-orange-600" />}
-                    {category === 'Tools' && <Award className="mr-2 h-6 w-6 text-red-600" />}
+                  <h3 className="text-xl font-bold mb-4 text-white flex items-center">
+                    {category === 'Frontend' && <Code className="mr-2 h-6 w-6 text-blue-400" />}
+                    {category === 'Backend' && <Database className="mr-2 h-6 w-6 text-green-400" />}
+                    {category === 'Database' && <Database className="mr-2 h-6 w-6 text-purple-400" />}
+                    {category === 'DevOps' && <Users className="mr-2 h-6 w-6 text-orange-400" />}
+                    {category === 'Tools' && <Award className="mr-2 h-6 w-6 text-red-400" />}
                     {category}
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {skillList.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors">
+                      <Badge key={skill} variant="secondary" className="bg-blue-900 text-blue-200 hover:bg-blue-800 transition-colors">
                         {skill}
                       </Badge>
                     ))}
@@ -164,20 +164,20 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-slate-800">Core Competencies</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-xl p-8">
+            <h3 className="text-2xl font-bold mb-6 text-white">Core Competencies</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-slate-700 mb-3">Software Development</h4>
-                <ul className="text-slate-600 space-y-2">
+                <h4 className="font-semibold text-gray-200 mb-3">Software Development</h4>
+                <ul className="text-gray-300 space-y-2">
                   <li>• Complete application development lifecycle</li>
                   <li>• Object-Oriented, SOLID Principles, Design Pattern concepts</li>
                   <li>• Enterprise Contract management, Point of Sales portal development</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-slate-700 mb-3">Leadership & Process</h4>
-                <ul className="text-slate-600 space-y-2">
+                <h4 className="font-semibold text-gray-200 mb-3">Leadership & Process</h4>
+                <ul className="text-gray-300 space-y-2">
                   <li>• 12+ years of programming experience</li>
                   <li>• Agile Development practices</li>
                   <li>• Source Controls like SVN, Azure DevOps, and Git</li>
@@ -189,15 +189,15 @@ const Index = () => {
       </section>
 
       {/* Professional Experience Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-slate-800">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">
             Professional Experience
           </h2>
           
           <div className="max-w-6xl mx-auto space-y-12">
             {experiences.map((exp, index) => (
-              <Card key={index} className="shadow-xl border-0 overflow-hidden">
+              <Card key={index} className="shadow-xl border-0 overflow-hidden bg-gray-800">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -212,14 +212,14 @@ const Index = () => {
                   </div>
                   
                   <div className="p-6">
-                    <p className="text-slate-700 mb-6 text-lg">{exp.description}</p>
+                    <p className="text-gray-300 mb-6 text-lg">{exp.description}</p>
                     
-                    <h4 className="font-semibold text-slate-800 mb-4">Key Achievements:</h4>
+                    <h4 className="font-semibold text-white mb-4">Key Achievements:</h4>
                     <ul className="space-y-3">
                       {exp.achievements.map((achievement, idx) => (
                         <li key={idx} className="flex items-start">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                          <span className="text-slate-600">{achievement}</span>
+                          <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                          <span className="text-gray-300">{achievement}</span>
                         </li>
                       ))}
                     </ul>
@@ -232,10 +232,10 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
-          <p className="text-xl text-blue-200 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-300 mb-12 max-w-2xl mx-auto">
             Ready to discuss opportunities or collaborate on exciting projects? I'd love to hear from you.
           </p>
           
