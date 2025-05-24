@@ -99,7 +99,7 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-blue-400/30 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                   <img 
-                    src="/lovable-uploads/3fcd0e28-f687-4750-9c4f-26a7ba396c2e.png" 
+                    src="/lovable-uploads/22b77c1f-fced-4118-8b3c-c1b90974a282.png" 
                     alt="Ahmed Naveed Zafar"
                     className="w-full h-full object-cover"
                   />
